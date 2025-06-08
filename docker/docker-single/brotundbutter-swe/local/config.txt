@@ -1,0 +1,6 @@
+webapp=app
+manager=manager
+dbuser=dbuser
+dbname=dbdemo
+dbpassword=einfach
+baseurl=http://localhost:8080

@@ -1,0 +1,13 @@
+FROM ubuntu
+RUN echo hello
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y vim tree iproute2 curl w3m ncat procps dumb-init iputils-ping 
+RUN apt-get install -y haproxy
+COPY myinit.sh /usr/bin/
+
+ENTRYPOINT ["/usr/bin/dumb-init","--"]
+CMD ["/usr/bin/myinit.sh"]
+
+

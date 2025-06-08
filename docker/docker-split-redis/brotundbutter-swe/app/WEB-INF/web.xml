@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  version="6.0">
+
+<display-name>SWE 3 Demo App</display-name>
+
+<listener>
+  <listener-class>hbv.web.MyContextListener</listener-class>
+</listener>
+
+<servlet-mapping>
+  <servlet-name>helloServlet</servlet-name>
+  <url-pattern>/hello</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>helloServlet</servlet-name>
+  <servlet-class>hbv.web.HelloServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>readServlet</servlet-name>
+  <url-pattern>/read</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>readServlet</servlet-name>
+  <servlet-class>hbv.web.ReadServlet</servlet-class>
+</servlet> 
+ 
+<servlet-mapping>
+  <servlet-name>writeServlet</servlet-name>
+  <url-pattern>/write</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>writeServlet</servlet-name>
+  <servlet-class>hbv.web.WriteServlet</servlet-class>
+</servlet>  
+
+</web-app>  

@@ -1,0 +1,31 @@
+# Ignore logs  
+*.log  
+docker-single/www/
+docker-split/www/
+docker-split-redis/www/
+docker-split-redis-haproxy/www/
+docker-split-redis-haproxy-shard/www/
+
+# Ignore build artifacts  
+*.class  
+*.war  
+
+# Ignore local config files  
+docker-single/brotundbutter-swe/local/config.txt  
+docker-single/brotundbutter-swe/local/netrc  
+docker-single/brotundbutter-swe/local/server.properties  
+
+# Ignore compiled binaries  
+*.o  
+*.out  
+*.exe  
+
+# Ignore dependency directories  
+node_modules/  
+target/  
+bin/  
+
+# Ignore system files  
+.DS_Store  
+Thumbs.db  
+

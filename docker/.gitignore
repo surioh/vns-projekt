@@ -1,0 +1,39 @@
+# Ignore log files
+*.log
+
+# Ignore CSV files
+*.csv
+
+# Ignore specific directories
+docker-single/test/stats/usage.csv
+docker-split/test/stats/usage.csv
+docker-split-redis/test/stats/usage.csv
+docker-split-redis-haproxy/test/stats/usage.csv
+docker-split-redis-haproxy-shard/test/stats/usage.csv
+
+docker-single/test/plots/Auslastung.png
+docker-split/test/plots/Auslastung.png
+docker-split-redis/test/plots/Auslastung.png
+docker-split-redis-haproxy/test/plots/Auslastung.png
+docker-split-redis-haproxy-shard/test/plots/Auslastung.png
+
+docker-single/www/*
+docker-split/www/*
+docker-split-redis/www/*
+docker-split-redis-haproxy/www/*
+docker-split-redis-haproxy-shard/www/*
+
+docker-single/brotundbutter-swe/build/*
+docker-split/brotundbutter-swe/build/*
+docker-split-redis/brotundbutter-swe/build/*
+docker-split-redis-haproxy/brotundbutter-swe/build/*
+docker-split-redis-haproxy-shard/brotundbutter-swe/build/*
+
+docker-single/brotundbutter-swe/target/*
+docker-split/brotundbutter-swe/target/*
+docker-split-redis/brotundbutter-swe/target/*
+docker-split-redis-haproxy/brotundbutter-swe/target/*
+docker-split-redis-haproxy-shard/brotundbutter-swe/target/*
+
+*.pcap
+docker-tcpdump/www/*
